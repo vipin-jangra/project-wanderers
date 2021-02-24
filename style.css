@@ -1,0 +1,441 @@
+
+
+*{
+	margin:0;
+	padding:0;
+	font-family: century gothic;
+	
+}
+
+
+body
+{
+	
+
+	
+	background-image:radial-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),  url("back.jpg");
+	background-attachment:fixed;
+	height: 100vh;
+	background-size:cover;
+	background-position:center;
+	
+}
+
+
+
+	
+
+
+ .ssnav ul
+{
+
+	
+	float: right;
+	list-style-type:none;
+	margin-top:18px;
+}
+
+
+
+.ssnav ul li
+{
+	
+	display:inline-block;
+}
+ .ssnav {
+ 	
+ 	
+ 	top: 0;
+	width:100%;
+	height:50px;
+	background-color:#0002;
+	line-height:2px;
+}
+ .ssnav ul li a
+{
+	
+	text-decoration:none;
+	color:#fff;
+	padding: 5px 30px;
+	border:2px solid transparent;
+	border-radius:20px;
+	transition:0.8s ease;
+	
+}
+.ssnav ul li a button{
+	border-radius:20px;
+	transition:0.8s ease;
+	color:#fff;
+	border: none;
+	background-color: transparent;
+	padding: 5px 30px;
+	text-decoration: none;
+}
+
+.logo
+{
+	margin-left: 6%;
+
+}
+
+.logo center b
+{
+
+	font-family:seoge script;
+	font-size:100px;
+	color:#2f4f4f;
+	text-shadow:6px 4px 5px white;
+	
+	
+}
+	
+
+ .ssnav ul li a:hover{
+	 
+	text-decoration: none;
+	background-color:white;
+	color:black;
+}
+
+.ssnav ul li a button:hover{
+	 
+	text-decoration: none;
+	background-color:transparent;
+	color:black;
+}
+
+ .ssnav ul li.active a{
+	background-color:white;
+	color:black;
+	
+}
+#student{
+	background-color: #f44336;
+}
+#SIGN{
+	background-color:#4CAF50;
+}
+#feedback{
+	background-color: #2196F3;
+}
+
+
+
+
+
+.sidenav{
+
+  
+  
+  width:100%;
+  height:50px;
+
+
+}
+.sidenav .b
+{
+
+  
+  float:left;
+  list-style-type:none;
+  margin-top:25px;
+}
+
+
+.sidenav .b .c .d 
+{
+
+	justify-content: center;
+	background-color: lime;
+  width: 120px;
+  height: 50px;
+  position: fixed;
+  text-decoration:none;
+  left: -90px;
+  color:black;
+  padding: 5px 30px;
+  border:2px solid black;
+  border-radius: 10px;
+  transition:0.8s ease;
+  
+}
+.btna{
+	text-decoration: none;
+	background-color: transparent;
+	border: none;
+}
+
+
+.sidenav .b .c .d:hover{
+   left:0;
+  text-decoration: none;
+  
+  color:black;
+}
+
+
+
+
+
+.main{
+	max-width:1300px;
+	margin:auto;
+}
+
+.box{
+	margin:0;
+	padding:0;
+	margin-top:20px;
+	width:40%;
+	height:auto;
+	
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	
+	
+}
+.box h1{
+	top: 15px;
+	font-family:seoge script;
+	font-size:35px;
+	color:black;
+	
+}
+
+.box .inputbox{
+	position:relative;
+	color:black;
+	
+	
+}
+
+.box .inputbox input{
+	width:100%;
+	padding:3%;
+	font-size:20px;
+	color:black;
+	letter-spacing:1%;
+	
+	
+	border:none;
+	border-bottom:1px solid black;
+	outline:none;
+	background-color:transparent;
+	
+	
+	
+}
+
+.box .inputbox label{
+	
+	position:absolute;
+	top:0;
+	left:0;
+	padding:5% 0%;
+	font-size:20px;
+	color:transparent;
+	pointer-event:none;
+	transition:0.5s;
+	
+	
+	
+}
+
+.box .inputbox input:focus ~ label{
+	
+	top:-1.125rem;
+	left:0;
+	color:black;
+	font-size:15px;
+	font-family: seoge script;
+	
+	
+	
+}
+.box input[type="submit"] {
+	
+	padding:3% 5%;
+	border-radius:10px;
+	background-color:white;
+
+	
+}
+.box input[type="submit"]:hover {
+	background-color:white;
+	border:2px solid #28bc9c;
+	color:#18bc9c;
+	
+}
+.container-fluid{
+	margin-top: 50px;
+
+}
+.btn{
+	height: 50px;
+	width: 100px;
+}
+.modal{
+	margin-top: 9%;
+
+}
+
+
+.modal-content{
+
+	overflow: auto;
+	width: 100%;
+	height: 150%;
+}
+#Trek{
+	background-color: #ff0000;
+}
+.image{
+	width: 85%;
+	height: 450px;
+	position: absolute;
+	left: 50%;
+	top: 54%;
+	
+	transform: translate(-50%,-30%);
+	background-image: url("2.jpg");
+	background-size: 100% 100%;
+	box-shadow: 1px 2px 10px 5px white;
+	animation: slider 9s infinite linear;
+
+
+
+}
+
+@keyframes slider{
+	0% {background-image: url("img3.jpg");
+		background-size: 100% 100%;}
+
+	30%{background-image:url("1.jpg");
+		background-size: 100% 100%;}
+
+	70%{background-image:url("2.jpg");
+		background-size: 100% 100%;}
+
+}
+
+/*for rating bar*/
+
+.heading {
+	color: white;
+	float: left;
+  font-size: 35px;
+  margin-left: 90px;
+
+}
+
+.fa {
+	
+  font-size: 100px;
+  
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: right;
+  width: 15%;
+  margin-top:5px;
+}
+
+.middle {
+  margin-top:10px;
+ 
+  width: 70%;
+}
+
+.bottom
+{
+	margin-top:35%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+.row
+{
+	padding-bottom:10%;
+}
+
+/* The bar container */
+.bar-container {
+	margin-left: 100px;
+  width: 100%;
+  background-color: #f1f1f1;
+  
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 50%; height: 18px; background-color: #4CAF50;}
+.bar-4 {width: 40%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 30%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 30%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 10%; height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+}
+
+.p{
+	color: white;
+	font-size: 50px;
+	font-weight: bolder;
+}
+.tx{
+	float:left;
+	color: white;
+	font-size:15px;
+}
+/*for the coupon in student offers
+*/
+.coupon {
+  border: 5px dotted #bbb; /* Dotted border */
+  width: 80%; 
+  border-radius: 15px; /* Rounded border */
+  margin: 0 auto; /* Center the coupon */
+  max-width: 300px; 
+}
+
+.container {
+	overflow: hidden;
+	width: 60px;
+  padding: 2px 16px;
+  background-color: #f1f1f1;
+}
+
+.promo {
+  background: #ccc;
+  padding: 3px;
+}
+
+.expire {
+  color: red;
+}
+
+
+
+https://www.youtube.com/watch?v=uyaV_EWWRmo

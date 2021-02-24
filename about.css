@@ -1,0 +1,325 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: century gothic;
+	
+}
+
+body
+{
+	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),  url("back.jpg");
+	background-attachment:fixed;
+	height: 100vh;
+	background-size:cover;
+	background-position:center;
+	
+}
+
+.logo center b
+{
+	font-family:seoge script;
+	font-size:100px;
+	color:#2f4f4f;
+	text-shadow:6px 4px 5px white;
+	
+	
+}
+
+
+.ssnav ul
+{
+
+	
+	float: right;
+	list-style-type:none;
+	margin-top:25px;
+}
+
+
+
+.ssnav ul li
+{
+	
+	display:inline-block;
+}
+ .ssnav {
+ 	
+ 	position: fixed;
+	width:100%;
+	height:50px;
+	background-color:#0002;
+	line-height:2px;
+}
+ .ssnav ul li a
+{
+	
+	text-decoration:none;
+	color:#fff;
+	padding: 5px 30px;
+	border:2px solid transparent;
+	border-radius:20px;
+	transition:0.8s ease;
+	
+}
+.ssnav ul li a button{
+	border-radius:20px;
+	transition:0.8s ease;
+	color:#fff;
+	border: none;
+	background-color: transparent;
+	padding: 5px 30px;
+	text-decoration: none;
+}
+ .ssnav ul li a:hover{
+	 
+	text-decoration: none;
+	background-color:white;
+	color:black;
+}
+
+.ssnav ul li a button:hover{
+	 
+	text-decoration: none;
+	background-color:transparent;
+	color:black;
+}
+
+
+.ssnav ul li.active a{
+	background-color:#fff;
+	color:#000;
+	
+	
+}
+.box{
+	margin:0;
+	padding:0;
+	margin-top:20px;
+	width:40%;
+	height:50vh;
+	
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	
+	
+}
+.box h1{
+	top: 15px;
+	font-family:seoge script;
+	font-size:35px;
+	color:black;
+	
+}
+
+.box .inputbox{
+	position:relative;
+	color:black;
+	
+	
+}
+
+.box .inputbox input{
+	width:100%;
+	padding:3%;
+	font-size:20px;
+	color:black;
+	letter-spacing:1%;
+	
+	
+	border:none;
+	border-bottom:1px solid black;
+	outline:none;
+	background-color:transparent;
+	
+	
+	
+}
+
+.box .inputbox label{
+	
+	position:absolute;
+	top:0;
+	left:0;
+	padding:5% 0%;
+	font-size:20px;
+	color:transparent;
+	pointer-event:none;
+	transition:0.5s;
+	
+	
+	
+}
+
+.box .inputbox input:focus ~ label{
+	
+	top:-1.125rem;
+	left:0;
+	color:black;
+	font-size:15px;
+	font-family: seoge script;
+	
+	
+	
+}
+.box input[type="submit"] {
+	
+	padding:3% 5%;
+	border-radius:10px;
+	background-color:white;
+
+	
+}
+.box input[type="submit"]:hover {
+	background-color:white;
+	border:2px solid #28bc9c;
+	color:#18bc9c;
+	
+}
+.container-fluid{
+	margin-top: 50px;
+
+}
+.btn{
+	height: 50px;
+	width: 100px;
+}
+.modal{
+	margin-top: 9%;
+
+}
+
+
+.modal-content{
+
+	overflow: auto;
+	width: auto;
+	height: auto;
+}
+
+#timeline{
+	justify-content: center;
+	display: flex;
+	background-color:transparent;
+}
+.item{
+	transform: translate3d(0,0,0);
+	position: relative;
+	width: 30%;
+	height: 100%;
+	min-height: 450px;
+	color:#fff;
+	overflow: hidden;
+	transition: width 0.5s ease;
+}
+#timeline:hover .item{
+	width: 38.3333%;
+}
+.item:before, .item:after{
+	transform: translate3d(0,0,0);
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+
+
+
+
+}
+.item:after{
+	background-color: rgba(0,0,0,0.85);
+	opacity: 1;
+	transition: opacity 0.5s ease;
+
+}
+.item:before{
+	background: linear-gradient(to bottom, rgba(0,0,0,0)0%,rgba(0,0,0,1)85%);
+	z-index: 1;
+	opacity: 0;
+	transform: translate3d(0,0,0) translateY(50%);
+	transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.item:hover{
+	width: 33% ! important;
+
+}
+.item:hover:after{
+	opacity: 0;
+
+	
+}
+
+.item:hover:before{
+	opacity: 0.8;
+	transform: translate3d(0,0,0) translateY(0);
+	transition: opacity 1s ease, transform 0.5s ease 0.25s ;
+	
+}
+
+.item_bg{
+	transform: translate3d(0,0,0);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-position: center;
+	transition: filter 0.5s ease;
+	
+
+}
+
+.item:hover .item_bg{
+	filter: grayscale(0);
+}
+
+.name{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	z-index: 1;
+	padding: 20px;
+	border-top: 2px solid #fff;
+	
+	border-bottom: 2px solid #fff;
+
+}
+
+.name p{
+	
+	font-size: 28px;
+	line-height: 0;
+
+}
+
+
+.item:hover .content{
+	opacity: 1;
+	transform:translateY(0);
+	transition: all 0.75s ease 0.5s;
+}
+.content h1{
+	text-transform:uppercase;
+	color: #fff;
+	font-size: 1.8rem;
+	font-weight: bolder;
+	letter-spacing: 1.5px;
+
+
+}
+.content{
+	margin-top: 75%;
+	transform: translate3d(0,0,0) translateY(60px);
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	margin-top: 0 1.618em;
+	top: 50%;
+	opacity: 0;
+
+}
+

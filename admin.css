@@ -1,0 +1,106 @@
+.back{
+
+  background-image:radial-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),  url("back.jpg");
+  background-attachment:fixed;
+  height: 100vh;
+  background-size:cover;
+  background-position:center;
+  
+  
+}
+.main{
+  max-width:1300px;
+  margin:auto;
+}
+
+.box{
+  background-color: #0016 ;
+  transform: translate(0,50%);
+  margin:0;
+  padding:0;
+  margin-top:20px;
+  width:40%;
+  height:auto;
+  
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  box-shadow: 1px 2px 10px 5px white;
+  
+  
+}
+.box h1{
+  top: 15px;
+  font-family:seoge script;
+  font-size:55px;
+  color:black;
+  
+}
+
+.box .inputbox{
+  position:relative;
+  color:black;
+  
+  
+}
+
+.box .inputbox input{
+  width:100%;
+  padding:3%;
+  font-size:20px;
+  color:black;
+  letter-spacing:1%;
+  
+  
+  border:none;
+  border-bottom:1px solid black;
+  outline:none;
+  background-color:transparent;
+  
+  
+  
+}
+
+.box .inputbox label{
+  
+  position:absolute;
+  top:0;
+  left:0;
+  padding:5% 0%;
+  font-size:20px;
+  color:transparent;
+  pointer-event:none;
+  transition:0.5s;
+  
+  
+  
+}
+
+.box .inputbox input:focus ~ label{
+  
+  top:-1.125rem;
+  left:0;
+  color:white;
+  font-size:15px;
+  font-family: seoge script;
+  
+  
+  
+}
+.box input[type="submit"] {
+  
+  padding:3% 5%;
+  border-radius:10px;
+  background-color:white;
+
+  
+}
+.box input[type="submit"]:hover {
+  background-color:white;
+  border:2px solid #28bc9c;
+  color:#18bc9c;
+  
+}
+p{
+  color: #fff;
+}
